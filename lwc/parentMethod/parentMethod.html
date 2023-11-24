@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Child Component Calling" icon-name="utility:animal_and_nature">
+        <div class="slds-p-around_medium">
+            <lightning-button label="send" variant="brand" onclick={sendData}></lightning-button>
+        </div>
+        <div>
+            <c-child-method></c-child-method>
+        </div>
+    </lightning-card>
+</template>

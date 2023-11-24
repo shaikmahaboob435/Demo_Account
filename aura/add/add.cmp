@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="num1" type="integer" default="45"/>
+    <aura:attribute name="num2" type="integer" default="20"/>
+    <aura:attribute name="sum" type="integer"/>
+    {!v.num1} *{!v.num2} = {!v.sum}
+    <br></br>
+    <ui:button label="click" press="{!c.add}"/>
+</aura:component>

@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_small" style="color: aqua;">
+          <template if:false={issecond}>
+            <lightning-input label="username"></lightning-input>
+            <lightning-input label="password"></lightning-input>
+            <br/>
+            <lightning-button label="login"></lightning-button>
+          </template>
+        </div>
+        <div class="slds-p-around_small" style="color: bisque;">
+            <template if:true={issecond}>
+                <div class="slds-box">
+                    <lightning-input label="first name"></lightning-input>
+                    <lightning-input label="second name"></lightning-input>
+                    <lightning-input label="Email id"></lightning-input>
+                    <lightning-input label="phone number"></lightning-input>
+                    <lightning-button label="sign Up"></lightning-button>
+                </div>
+            </template>
+        </div>
+        <div class="slds-p-around_small" style="color: blue;">
+            <div class="slds-box">
+                <lightning-button label="switch" variant="brand" onclick={change}></lightning-button>
+                
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>
