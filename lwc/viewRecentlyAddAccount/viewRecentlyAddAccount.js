@@ -9,7 +9,6 @@ const table_columns= [
     {label: 'Type', fieldName: 'Type', type: 'text'},
     {label: 'Website', fieldName: 'Website', type: 'text'},
     {label: 'CreatedDate', fieldName: 'CreatedDate', type: 'text'},
-
 ];
 export default class ViewRecentlyAddAccount extends LightningElement {
      columns = table_columns;
