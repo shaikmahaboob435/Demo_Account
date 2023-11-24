@@ -1,5 +1,5 @@
 public class HttpCalloutSample {
-	// Pass in the endpoint to be used using the string url
+	 // Pass in the endpoint to be used using the string url
   public String getCalloutResponseContents(String url) {
 
     // Instantiate a new Http object
@@ -13,6 +13,6 @@ public class HttpCalloutSample {
     // Send the request, and return a response
     HttpResponse result = h.send(req);
     system.debug(''+result);
-    return result.getBody();
+     return result.getBody();
   }
 }
