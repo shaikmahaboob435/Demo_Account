@@ -1,5 +1,4 @@
 public class recentlyAdd {
-    
     /**
         * @description:- getAccounts retrieves the last 10 Account records created
         * @return List<Account>
