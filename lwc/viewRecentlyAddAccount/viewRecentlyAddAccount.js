@@ -12,6 +12,6 @@ const table_columns= [
 
 ];
 export default class ViewRecentlyAddAccount extends LightningElement {
-    columns = table_columns;
-    @wire(getAccountList) accounts;
+     columns = table_columns;
+     @wire(getAccountList) accounts;
 }

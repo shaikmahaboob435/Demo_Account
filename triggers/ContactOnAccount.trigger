@@ -8,7 +8,7 @@ trigger ContactOnAccount on Contact (after INSERT, after UPDATE, after DELETE) {
 	}
 	if(Trigger.isUpdate|| Trigger.isDelete){
     for(Contact con:trigger.old){
-        accountIds.add(con.accountID);
+         accountIds.add(con.accountID);
     	}
 	}
 
